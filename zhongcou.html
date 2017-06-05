@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/zhongcou.css">
+	<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" class="library" src="js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" class="library" src="js/fangdajing.js"></script>
+</head>
+<body>
+	<div class="tit">
+		<span>我的一元购</span>
+	</div>
+	<div class="goods">
+		<div class="con-FangDa" id="fangdajing">
+			<div class="jinxing">
+				<span class="zhongtit">众筹中</span>
+			</div>
+  			<div class="con-fangDaIMg">
+  			<!-- 正常显示的图片-->
+  			<img src="img/b1.jpg">
+    		<!-- 滑块-->  
+   			<div class="magnifyingBegin"></div>
+   			 <!-- 放大镜显示的图片 -->
+    		<div class="magnifyingShow"><img src="img/1.jpg"></div>
+  			</div>
+  			
+  			<div class="imglist">
+  				<span class="last" id="syg"></span>
+  				<div class="imgnum">
+  					<ul class="con-FangDa-ImgList">
+			  			<!-- 图片显示列表 -->
+					    <li class="active"><img src="img/1.jpg" data-bigimg="img/b1.jpg"></li>
+					    <li><img src="img/2.jpg" data-bigimg="img/b2.jpg"></li>
+					    <li><img src="img/3.jpg" data-bigimg="img/b3.jpg"></li>
+					    <li><img src="img/4.jpg" data-bigimg="img/b4.jpg"></li>
+					    <li><img src="img/5.jpg" data-bigimg="img/b5.jpg"></li>
+					    <li><img src="img/2.jpg" data-bigimg="img/b2.jpg"></li>
+					    <li><img src="img/3.jpg" data-bigimg="img/b3.jpg"></li>
+					    <li><img src="img/4.jpg" data-bigimg="img/b4.jpg"></li>
+					    <li><img src="img/5.jpg" data-bigimg="img/b5.jpg"></li>
+				    </ul>
+  				</div>	  				
+			    <span class="next" id="xyg"></span>	
+  			</div>  			
+		</div>
+		<script>   
+  
+     $(function  () {
+        var num=0;
+        var shu=$(".con-FangDa-ImgList li").length
+        var sl=shu*1-4*1+1
+        var left=(shu*1-4*1)*100
+         $("#syg").click(function  () {
+            num++;
+            if(100*num>=left){
+                num=-1;
+                $(".con-FangDa-ImgList").css("marginLeft","-left+'px'");
+            }else{
+                $(".con-FangDa-ImgList").css("marginLeft",-(100*num)+"px");
+            }
+         });
+          $("#xyg").click(function  () {
+           
+            if(num==-1||num==0){
+                num=sl;
+            } 
+                num--;
+            if(100*num<=0){
+                $(".con-FangDa-ImgList").css("marginLeft","0px");               
+            }else{
+               $(".con-FangDa-ImgList").css("marginLeft",-(100*num)+"px");
+            }
+         }); 
+     });
+ 
+ </script> 
+		<div class="goodsinfo">
+			<p>【一元购】Makino犸凯奴 男女户外多功能登山包5434旅行徒步背包80L 大容量</p>
+			<p> 已筹到</p>
+			<p> ￥<span>566</span></p>
+			<p> 当前进度89%</p>
+			<p> <span class="now"></span> </p>
+			<p> 总需600件数<span>剩余34件</span></p>
+			<p> 参与<span>1</span>件数</p>
+			<p> <a href="javascript:">立即抢购</a></p>
+			<p> 此项目必须在2016年12月12日前得到<span>￥600</span>的支持才可成功！剩余<strong>44</strong>天！</p>
+		</div>
+	</div>
+	<div class="more">
+		<ul class="moul">
+			<li class="current">商品详情</li>
+			<li>参与记录</li>
+			<li>规则说明</li>
+		</ul>
+		<div class="moreinfo">
+			<div class="commodity">
+				<img src="img/info1.png" alt="">
+				<img src="img/info2.png" alt="">
+			</div>
+			<div class="record">
+				<table>
+					<tr>
+						<td>会员</td>
+						<td>幸运编码</td>
+						<td>时间</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>            
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+					<tr>
+						<td><i></i>我的昵称是什么</td>
+						<td>10051201</td>
+						<td>2016-10-29 10:00:35</td>
+					</tr>
+				</table>
+			</div>
+			<div class="rule">
+				<p class="mrt">规则：</p>
+				<p>1、每件商品参考市场价平分成相应“等份”，每份1元，1份对应1个幸运编码。</p>
+				<p>2、同一件商品仅可以购买一次。</p>
+				<p>3、当一件商品所有“等份”全部售出后计算出“幸运编码”，拥有“幸运编码”者即可获得此商品。</p>
+				<p>4、当活动商品销售份额未达到相应数量时，活动失败，所有参与活动金额在两个工作日内原路退还。</p>
+				<p>5、幸运编码计算方式：</p>
+				<p>1）取该商品最后购买时间前网站所有商品100条购买时间记录（限时揭晓商品取截止时间前网站所有商品100条购买时间记录）。</p>
+				<p>2）时间按时、分、秒、毫秒依次排列组成一组数值。</p>
+				<p>3）将这100组数值之和除以商品总需参与人次后取余数，余数加上10,000,001即为“幸运编码”。</p>
+				<p class="mrt">流程：</p>
+				<p>1、挑选商品</p>
+				<p>分类浏览或直接搜索商品，点击“立即1元云购”。</p>
+				<p>2、支付1元</p>
+				<p>通过在线支付平台，支付1元即购买1人次，获得1个“幸运编码”。同一件商品仅可购买一次。</p>
+				<p>3、揭晓获得者</p>
+				<p>当一件商品达到总参与人次，计算出1名商品获得者，世峰户外商城会通过手机短信或邮件通知您领取商品。</p>
+				<p class="mrt coqian">注：</p>
+				<p class="coqian">1）商品揭晓后您可登录"世峰户外商城"查询详情，未获得商品的用户不会收到短信或邮件通知；</p>
+				<p class="coqian">2）商品揭晓后，请及时登录"世峰户外商城"完善个人资料，以便我们能够准确无误地为您配送商品。</p>
+				<p class="coqian">3）所有已揭晓商品均不给予退款。</p>		
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function  () {
+			$(".moul li").click(function  () {
+				$(this).addClass("current")
+						.siblings().removeClass("current");
+				var length=$(".moul li").index($(this))	;
+				$(".moreinfo div").eq(length).css("display","block")
+										.siblings().css("display","none");
+			});
+		});
+	</script>
+</body> 
+<html>

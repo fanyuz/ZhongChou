@@ -1,0 +1,85 @@
+.tit{
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 60px;
+	font-size: 16px;
+	color: #333333;
+	text-indent: 10px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.record,.end{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+}
+.re-left,.end-left{
+	width: 145px;
+	height: 145px;
+	border:1px solid #e4e4e4;
+	text-align: center;
+	float: left;
+}
+.re-left img,.end-left img{
+	width: 100%;
+	height: 100%;
+}
+.re-right,.end-right{
+	float: left;
+	width: 1020px;
+	padding-left: 33px;
+}
+.re-right p{
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 12px;
+	padding-left: 5px;
+}
+.end-right p{
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 8px;
+	padding-left: 5px;
+}
+.re-right p:nth-child(1),.end-right p:nth-child(1){
+	color: #333333;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 0;
+}
+.zhuangtai{
+	color: #fd6675!important;
+	font-size: 14px!important;
+	font-weight: bold;
+}
+.user{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding:20px 0;
+}
+.lose{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.user p:nth-child(1) span{
+	font-size: 16px;
+	color: #fd6574;
+	margin-left: 50px;
+	font-weight: bold;
+}
+.user p:nth-child(2),.lose p{
+	margin-top: 10px;
+}
+.lose p:nth-child(2) span{
+	font-size: 16px;
+	color: #fd6574;
+	margin-left: 50px;
+	font-weight: bold;
+}
+.lose p strong{
+	margin-left: 5px;
+	margin-right: 5px;
+}

@@ -1,0 +1,173 @@
+body{
+	color: #333333;
+}
+.top,.top a{
+	color: #333333;
+	line-height: 74px;
+}
+.content1,.top{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.con-left{
+	width: 198px;
+	float: left;
+	border: 1px solid #e4e4e4;
+}
+.con-right{
+	float: right;
+    width: 970px;
+}
+.my-name{
+	background:#f4f4f4;
+	font-size:16px;
+	color:#999;
+	height:59px;
+	line-height: 59px;
+}
+.my-name i{
+	width:21px;
+	height:21px;
+	background: url(../img/geren.png) no-repeat;
+	display: inline-block;
+	margin-left:20px;
+	margin-right:7px;
+	vertical-align: -3px;
+}
+.con-left dl{
+	overflow:hidden;
+	padding-bottom:3px;
+}
+.con-left dt{
+	font-size:16px;
+	color:#333;
+	height:60px;
+	line-height: 60px;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+	font-weight:normal;
+}
+.con-left dd{
+	font-size:14px;
+	color:#666;
+	padding-top:12px;
+	padding-bottom: 12px;
+	padding-left:64px;
+}
+
+.con-left dd a{
+	color:#666;
+	text-decoration: none;
+}
+.con-left dd a.current{
+	color:#ff3333;
+}
+.con-left .t1{
+	background:url(../img/dingdan.png) no-repeat;
+	display: inline-block;
+	width:15px;
+	height:16px;
+	margin-left:38px;
+	margin-right:11px;
+	vertical-align: -2px;
+}
+.con-left .t2{
+	width:15px;
+	height:16px;
+	background: url(../img/male.png) no-repeat;
+	display: inline-block;
+	margin-left:38px;
+	margin-right:11px;
+	vertical-align: -2px;
+}
+.con-left .t3{
+	width:17px;
+	height:16px;
+	background: url(../img/khfuwu.png) no-repeat;
+	display: inline-block;
+	margin-left:38px;
+	margin-right:9px;
+	vertical-align: -2px;
+}
+.con-left .t4{
+	width:17px;
+	height:16px;
+	background: url(../img/shequ.png) no-repeat;
+	display: inline-block;
+	margin-left:38px;
+	margin-right:9px;
+	vertical-align: -2px;
+}
+.top-tit{
+	font-size:16px;
+	color:#333;
+	height:42px;
+}
+.titul{
+	width: 970px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.titul li{
+	float: left;
+	width: 130px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.active{
+	background: #343434;
+	color: #ffffff;
+}
+.gather,.kid{
+	width: 970px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+table{
+	width: 970px;
+	text-align: center;
+}
+.else td{
+	padding: 40px 0;
+}
+.else td img{
+	width: 70px;
+	height: 90px;
+}
+table tr {
+	border-bottom:1px solid #e4e4e4; 
+}
+table tr td:nth-child(1){
+	width: 520px;
+	line-height: 40px;
+	color: #666666;
+}
+table tr td:nth-child(1) span{
+	display: inline-block;
+	width: 380px;
+	height: 70px;
+	line-height: 35px;
+	vertical-align: middle;
+	text-align: left;
+	margin-left: 20px;
+}
+table tr:nth-child(1) {
+	border-bottom: none;
+	background: #eeeeee;
+	padding: 20px 0;
+}
+.now{
+	color: #ff6c6c;
+}
+table a{
+	color: #568dfc;
+}

@@ -1,0 +1,373 @@
+body{
+	background: #f6f6f6;
+	font-size: 14px;
+	color:#333333;
+}
+.tit{
+	width: 100%;
+	min-width: 1200px;
+	line-height: 40px;
+	background: #ffffff;
+	text-align: center;
+}
+.tit span{
+	display: inline-block;
+	width: 1200px;
+	background: url(../img/mine.png) no-repeat 1100px  12px;
+	text-align: right;
+}
+.goods{
+	width: 1200px;
+	margin: 20px auto;
+	padding: 10px 0;
+	overflow: hidden;
+	background: #ffffff;
+}
+/*主容器*/
+.con-FangDa{
+	width: 500px;
+	height: auto;
+	float: left;
+	position: relative;
+}
+/*正常容器*/
+.con-fangDaIMg{
+	width: 500px;
+	height: 400px;
+	position: relative;
+	background-color: #454545;
+}
+.con-fangDaIMg > img{
+	width: 100%;
+	height:100%
+}
+/*滑块*/
+.magnifyingBegin{
+	width: 125px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background-color: #454545;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	cursor: move;
+	display: none;
+}
+/*放大镜显示区域*/
+.magnifyingShow{
+	width: 500px;
+	height: 400px;
+	display: none;
+	position: absolute;
+	right: -510px;
+	top: 0;
+	overflow: hidden;
+	background-color: #454545;
+	z-index: 1000;
+}
+.magnifyingShow > img{
+	width: 2000px;
+	height: 1600px;
+	margin-left:0;
+	margin-top: 0;
+}
+/*设置选择图片容器*/
+.con-FangDa-ImgList{
+	margin-top:10px;
+	height:90px;
+	white-space: nowrap;
+	list-style: none;
+	position: relative;
+	display: inline-flex;
+}
+.con-FangDa-ImgList > li{
+	margin-right:16px;
+	width: 80px;
+	height: 80px;
+	float: left;
+	cursor: pointer;
+	border: 2px solid #fff;
+	text-align:center;
+}
+
+.con-FangDa-ImgList > li > img{
+	vertical-align:top;
+	display:inline;
+	width:80px;
+	height:80px;
+}
+.con-FangDa-ImgList > .active{
+	border-color:#000;
+} 
+.imglist{
+	width: 500px;
+	overflow: hidden;
+}
+.imglist span{
+	display: inline-block;
+	width: 30px;
+	height: 82px;
+	float: left;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.last{
+	background: url(../img/zuo.png) no-repeat 7px 30px;
+	margin-right: 20px;
+}
+.next{  
+	background: url(../img/you.png) no-repeat 7px 30px;
+	margin-left: 20px;
+}
+.imgnum{
+	width: 400px;
+	height: 96px;
+	float: left;
+	overflow: hidden;
+}
+.jinxing{
+	position: absolute;
+	z-index: 9;
+	border-bottom: 30px solid #17cad1;
+	border-left: 14px solid transparent;
+	border-right: 27px solid transparent;
+	width: 111px;
+	transform:rotate(-48deg);
+	-ms-transform:rotate(-48deg); 	
+	-moz-transform:rotate(-48deg); 	
+	-webkit-transform:rotate(-48deg); 
+	-o-transform:rotate(-48deg); 
+	left: -53px;
+	top: 30px;
+}
+.lose{
+	position: absolute;
+	z-index: 9;
+	border-bottom: 30px solid #cccccc;
+	border-left: 14px solid transparent;
+	border-right: 27px solid transparent;
+	width: 111px;
+	transform:rotate(-48deg);
+	-ms-transform:rotate(-48deg); 	
+	-moz-transform:rotate(-48deg); 	
+	-webkit-transform:rotate(-48deg); 
+	-o-transform:rotate(-48deg); 
+	left: -53px;
+	top: 30px;
+}
+.notice{
+	position: absolute;
+	z-index: 9;
+	border-bottom: 30px solid #ff5a6a;
+	border-left: 14px solid transparent;
+	border-right: 27px solid transparent;
+	width: 111px;
+	transform:rotate(-48deg);
+	-ms-transform:rotate(-48deg); 	
+	-moz-transform:rotate(-48deg); 	
+	-webkit-transform:rotate(-48deg); 
+	-o-transform:rotate(-48deg); 
+	left: -53px;
+	top: 30px;
+}
+.zhongtit{
+	color: #fff;
+	position: absolute;
+	left: 43px;
+	top: 4px;
+	font-size: 16px;
+	text-align: center;
+}
+.hide{
+	display: none;
+}
+.yuanyin{
+ 	margin-top: 150px!important;
+}
+.goodsinfo{
+	float: left;
+	width: 640px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.goodsinfo p:nth-child(1){
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 35px;
+	height: 70px;
+}
+.goodsinfo p:nth-child(2){
+	font-size: 16px;
+	margin-top: 40px;
+}
+.goodsinfo p:nth-child(3){
+	font-size: 20px;
+}
+.goodsinfo p:nth-child(3) span{
+	font-size: 36px;
+}
+.goodsinfo p:nth-child(4){
+	color: #ff5a6a;
+	margin-top: 40px;
+}
+.goodsinfo p:nth-child(5){
+	display: inline-block;
+	width: 640px;
+	height: 19px;
+	border-radius: 10px;
+	background: #f1f1f1;
+	position: relative;
+	margin-top: 10px;
+}
+.goodsinfo p:nth-child(5) span{
+	display: inline-block;
+	width: 89%;
+	height: 19px;
+	border-radius: 10px;
+	background: #ff5a6a;	
+}
+.goodsinfo p:nth-child(6){
+	margin-top: 7px;
+}
+.goodsinfo p:nth-child(6) span{
+	float: right;
+}
+.goodsinfo p:nth-child(7){
+	margin-top: 40px;
+}
+.goodsinfo p:nth-child(7) span{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: #eeeeee;
+	font-size: 16px;
+}
+.goodsinfo p:nth-child(8){
+	margin-top: 15px;
+}
+.goodsinfo p:nth-child(8) a{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	background: #17cad1;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 10px;
+}
+.goodsinfo p:nth-child(9){
+	margin-top: 15px;
+}
+.goodsinfo p:nth-child(9) span{
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.goodsinfo p:nth-child(9) strong{
+	color: #ff5a6a;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.getter,.luck,.result{
+	text-align: center;
+}
+.getter i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/wolf.png) no-repeat;
+	border-radius: 30px;
+	vertical-align: -7px;
+	margin-right: 5px;
+}
+.luck span{
+	display: inline-block;
+	line-height: 60px;
+	padding: 0 10px;
+	color: #ff5a6a;
+	background: #ffefb6;
+	border-radius: 10px;
+	font-size: 16px;
+}
+.luck span strong{
+	font-size: 25px;
+}
+.more{
+	width: 1200px;
+	margin:  20px auto;
+	background: #ffffff;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.moul{
+	width: 1200px;
+	overflow: hidden;
+	border-bottom: 1px solid #f6f6f6;
+}
+.moul li{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.current{
+	border-bottom:3px solid #ff5868;
+}
+.record{
+	width: 1130px;
+	padding: 10px 30px;
+}
+.commodity{
+	width: 750px;
+	margin: 0 auto;
+}
+.commodity img{
+	width: 100%;	
+}
+table{
+	width: 1130px;
+	text-align: center;
+	line-height: 45px;
+	color: #666666;
+}
+table tr td:nth-child(2){
+	width: 630px;
+}
+table i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/wolf.png) no-repeat;
+	vertical-align: -5px;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+table tr:nth-child(1){
+	background: #f4f4f4;
+	color: #333333;
+}
+.rule{
+	width: 1120px;
+	padding: 10px 40px;
+}
+.rule p{
+	line-height: 25px;
+}
+.mrt{
+	margin-top: 30px;
+}
+.coqian{
+	color: #666666;
+}
+.record,.rule{
+	display: none;
+}
